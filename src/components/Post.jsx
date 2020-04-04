@@ -13,8 +13,6 @@ class Post extends React.Component {
     const { like } = this.state;
     const { infoPost, infoUsuario } = this.props;
 
-    console.log({ infoPost, infoUsuario });
-
     return (
       <article className="post">
         <header className="post__header">
