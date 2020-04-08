@@ -4,6 +4,7 @@ import Feed from "./routes/Feed";
 import Topbar from "./components/Topbar";
 import Users from './routes/Users';
 import NewUser from './routes/NewUser';
+import Profile from './routes/Profile';
 import "./App.scss";
 
 
@@ -18,8 +19,12 @@ class App extends React.Component {
             <Feed />
           </Route>
 
-          <Route path="/users">
+          <Route exact path="/users">
             <Users />
+          </Route>
+
+          <Route path="/users/:username">
+            <Profile />
           </Route>
 
           <Route path="/newuser">
